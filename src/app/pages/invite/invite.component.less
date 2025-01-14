@@ -1,0 +1,139 @@
+.view-container {
+  height: 100svh;
+}
+
+@keyframes st1f {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes st2f {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes st3f {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes st4f {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.card {
+  &:nth-child(1) {
+    animation: st1f 1.2s ease-in;
+  }
+
+  &:nth-child(2) {
+    animation: st2f 1.2s ease-in;
+  }
+
+  &:nth-child(3) {
+    animation: st3f 1.2s ease-in;
+  }
+
+  &:nth-child(4) {
+    animation: st4f 1.2s ease-in;
+  }
+}
+
+.invite-card {
+
+}
+
+@keyframes blurOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+
+  }
+}
+
+.blur-overlay {
+
+  animation: blurOverlay 1.2s ease-in;
+  // animation-delay: 1.5s;
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+
+  &:after {
+    position: absolute;
+    inset: 0;
+    content: '';
+    filter: blur(1.2rem);
+
+    background: #ffffff80;
+  }
+}
+
+.invitation-cover {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  padding: 6px 18px;
+  &:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    filter: blur(1.2rem);
+  }
+}
+
+.char {
+  display: inline-block;
+  opacity: 0;
+  //transform: translateY(14px);
+  transition: all 0.3s ease;
+  &.space {
+    width: 0.25em;
+  }
+  &.visible {
+    opacity: 1;
+    //transform: translateY(0);
+  }
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 0.25em;
+}
+span {}
+
+

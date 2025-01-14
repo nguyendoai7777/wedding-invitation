@@ -1,0 +1,32 @@
+<div class="grid view-container grid-cols-2">
+  <div class="card bg-[deeppink]">1</div>
+  <div class="card bg-[deeppink]">2</div>
+  <div class="card bg-[deeppink]">3</div>
+  <div class="card bg-[deeppink]">4</div>
+</div>
+
+@if (overlayVisible) {
+  <div class="blur-overlay flex items-center justify-center" #bluOverlay>
+    <div class="invitation-cover rounded max-w-[560px]">
+      <!-- <div>Chào: ABC xyz</div>
+       <div>Thân mời bạn (cùng xyz) tới ALocation để dự lễ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam eius ipsa neque! Expedita fuga minima quod sed. Blanditiis ea ex illo magni quas rerum unde? Adipisci ex officiis provident.</div>-->
+      @for (_ of content; let id = $index; track id) {
+        <div>
+          @for (word of getWordsForLine(id); track $index) {
+            <span class="word">
+              @for (char of word; track $index) {
+                <span
+                  class="char"
+                  [class.space]="char.value === ' '"
+                  [class.visible]="char.isVisible"
+                >{{ char.value === ' ' ? '\u00A0' : char.value }}</span>
+              }
+            </span>
+          }
+        </div>
+      }
+    </div>
+  </div>
+}
+
+<div class="absolute invite-card"></div>
