@@ -1,0 +1,7 @@
+<div class="columns-2 gap-4" style="column-gap: 12px;">
+  @for (item of images(); track item.id) {
+    <button class="inline-flex w-full relative break-inside-avoid-column mb-3" (click)="onPick(item)">
+      <img class="w-full h-auto rounded-lg shadow-md transition-transform" [src]="item.link">
+    </button>
+  }
+</div>

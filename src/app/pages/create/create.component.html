@@ -1,1 +1,54 @@
-<p>create works!</p>
+<wi-loading />
+<div class="w-full relative">
+  <div class="mx-auto layout" #layout>
+    <div class="grid grid-cols-2 h-full gap-2 p-2">
+      @for (l of imageLayout(); let idx = $index; track idx) {
+        <button
+          (click)="openPickImage(bottomSheetRef, l)"
+          mat-ripple
+          [matRippleCentered]="true"
+          matRippleColor="#ff149312"
+          class="image-box text-pink-600 flex justify-center items-center border border-dashed border-pink-400 rounded ">
+          @if (l.previewUrl) {
+            <div class="flex w-full h-full items-center justify-center image-placeholder">
+              <img
+                class="max-w-full"
+                [src]="l.previewUrl" alt="Ảnh {{idx + 1}}">
+            </div>
+          } @else {
+            <div>{{ readyForPlay() }}</div>
+          }
+        </button>
+      }
+    </div>
+
+
+    <!--<input accept="image/*" #file hidden type="file" (input)="getFile($event)">-->
+  </div>
+
+  @if (overlayVisible) {
+    <div class="blur-overlay flex items-center justify-center" #bluOverlay>
+      <div class="invitation-cover rounded max-w-[560px]">
+        <div class="fill-line" contenteditable id="subject">Chào</div>
+        <div class="fill-line mt-2" contenteditable id="content">Thân mời:</div>
+      </div>
+    </div>
+  }
+
+</div>
+<wi-bottom-navigation
+  [followRef]="layout"
+  [disableNext]="false"
+  (next)="step() === 1 ? gotoFillContentStep() : gotoPlay()"
+  (dock)="openPickBackgroundImage(bottomSheetRef)"
+/>
+<ng-template #bottomSheetRef>
+  <div class="h-[40px] text-center content-center text-2xl">Chọn 1</div>
+  <div class="py-2 overflow-y-scroll" style="margin-right: -16px; height: calc(100% - 40px)">
+    <wi-pick-images
+      [images]="imgurImages"
+      (pick)="setImageTo($event)"
+    />
+  </div>
+</ng-template>
+<!-- [disableNext]="!readyForPlay() || this.step() === 2"-->

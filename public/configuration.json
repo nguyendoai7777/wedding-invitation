@@ -1,0 +1,7 @@
+{
+  "imgur": {
+    "apiUrl": "https://api.imgur.com/3",
+    "clientId": "07e68140edfe878",
+    "clientSecret": "987afbdbfaa886b2cda429dcea62f3b5c83337f3"
+  }
+}

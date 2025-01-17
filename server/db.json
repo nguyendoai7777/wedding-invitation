@@ -1,0 +1,22 @@
+{
+  "background": "tada",
+  "imagesLayout": [
+    {
+      "id": 1,
+      "imgUrl": "tada"
+    },
+    {
+      "id": 2,
+      "imgUrl": ""
+    },
+    {
+      "id": 3,
+      "imgUrl": ""
+    },
+    {
+      "id": 4,
+      "imgUrl": ""
+    }
+  ],
+  "invitationContent": ""
+}

@@ -1,4 +1,6 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
+import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
+import { AppQueryParams } from '../../shared/types';
 
 interface CharData {
   value: string;
@@ -18,15 +20,24 @@ interface CharData {
 })
 export class InviteComponent {
   @ViewChild('bluOverlay') bluOverlayRef!: ElementRef<HTMLDivElement>;
+
+  private readonly ar = inject(ActivatedRoute);
+  imgServer = 'https://i.imgur.com/';
+  qp = this.ar.snapshot.queryParams as AppQueryParams;
+
   overlayVisible = false;
   content = [
-    'Chào: ABC xyz',
-    'Thân mời bạn (cùng xyz) tới ALocation để dự lễ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam eius ipsa neque! Expedita fuga minima quod sed. Blanditiis ea ex illo magni quas rerum unde? Adipisci ex officiis provident.'
+    this.qp.subject,
+    this.qp.content
   ];
 
   chars: CharData[] = [];
+  isLoading = true;
 
   ngOnInit() {
+    this.preloadImages([this.qp.i1, this.qp.i2, this.qp.i3, this.qp.i4]).then(() => {
+      this.isLoading = false; // Ẩn loading khi tất cả ảnh đã tải
+    });
     setTimeout(() => {
       this.overlayVisible = true;
 
@@ -36,6 +47,21 @@ export class InviteComponent {
       this.startAnimation();
     }, 1500);
 
+  }
+
+  preloadImages(imageUrls: string[]): Promise<void> {
+    const promises = imageUrls.map(url => this.loadImage(url));
+    return Promise.all(promises).then(() => {
+    });
+  }
+
+  loadImage(url: string): Promise<void> {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.src = this.imgServer + url;
+      img.onload = () => resolve();
+      img.onerror = () => reject(new Error(`Failed to load image: ${url}`));
+    });
   }
 
   initializeChars() {

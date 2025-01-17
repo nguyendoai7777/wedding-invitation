@@ -1,0 +1,46 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M147.86 76.68C161.16 58.36 159.38 41.78 148.2 33.66C137.02 25.54 120.72 28.96 107.4 47.28C103.48 52.68 101.22 59.5 100 66.4C98.78 59.48 96.52 52.68 92.6 47.28C79.3 28.96 62.98 25.54 51.8 33.66C40.62 41.78 38.84 58.36 52.14 76.68C56.06 82.08 61.86 86.32 68.04 89.62C61.08 88.64 53.92 88.68 47.56 90.74C26.02 97.74 17.74 112.2 22 125.34C26.26 138.48 41.48 145.3 63.02 138.3C69.38 136.24 75.2 132.04 80.26 127.18C77.18 133.5 75 140.32 75 147C75 169.64 86.2 182 100 182C113.8 182 125 169.64 125 147C125 140.32 122.82 133.48 119.74 127.18C124.8 132.06 130.62 136.24 136.98 138.3C158.52 145.3 173.72 138.48 178 125.34C182.26 112.2 173.98 97.74 152.44 90.74C146.08 88.68 138.92 88.64 131.96 89.62C138.14 86.32 143.92 82.08 147.86 76.68Z"
+    fill="#E15D64" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  <g filter="url(#filter0_d_9_2)">
+    <path
+      d="M152.42 109.26C173.96 102.26 177.98 74.66 177.98 74.66C177.98 74.66 158.5 54.7 136.96 61.7C130.6 63.76 124.78 67.96 119.72 72.82C122.8 66.5 124.98 59.68 124.98 53C125 30.36 100 18 100 18C100 18 75 30.36 75 53C75 59.68 77.18 66.52 80.26 72.82C75.2 67.94 69.38 63.76 63.02 61.7C41.48 54.7 22 74.66 22 74.66C22 74.66 26.02 102.26 47.56 109.26C53.92 111.32 61.08 111.36 68.04 110.38C61.84 113.68 56.06 117.92 52.14 123.32C38.84 141.64 51.8 166.34 51.8 166.34C51.8 166.34 79.28 171.04 92.6 152.72C96.52 147.32 98.78 140.5 100 133.6C101.22 140.52 103.48 147.32 107.4 152.72C120.7 171.04 148.2 166.34 148.2 166.34C148.2 166.34 161.16 141.64 147.86 123.32C143.94 117.92 138.14 113.68 131.96 110.38C138.9 111.34 146.06 111.32 152.42 109.26Z"
+      fill="#F8AFB4" />
+    <path
+      d="M152.42 109.26C173.96 102.26 177.98 74.66 177.98 74.66C177.98 74.66 158.5 54.7 136.96 61.7C130.6 63.76 124.78 67.96 119.72 72.82C122.8 66.5 124.98 59.68 124.98 53C125 30.36 100 18 100 18C100 18 75 30.36 75 53C75 59.68 77.18 66.52 80.26 72.82C75.2 67.94 69.38 63.76 63.02 61.7C41.48 54.7 22 74.66 22 74.66C22 74.66 26.02 102.26 47.56 109.26C53.92 111.32 61.08 111.36 68.04 110.38C61.84 113.68 56.06 117.92 52.14 123.32C38.84 141.64 51.8 166.34 51.8 166.34C51.8 166.34 79.28 171.04 92.6 152.72C96.52 147.32 98.78 140.5 100 133.6C101.22 140.52 103.48 147.32 107.4 152.72C120.7 171.04 148.2 166.34 148.2 166.34C148.2 166.34 161.16 141.64 147.86 123.32C143.94 117.92 138.14 113.68 131.96 110.38C138.9 111.34 146.06 111.32 152.42 109.26Z"
+      stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <path
+    d="M100 112C106.627 112 112 106.627 112 100C112 93.3726 106.627 88 100 88C93.3726 88 88 93.3726 88 100C88 106.627 93.3726 112 100 112Z"
+    fill="white" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M100 88V58" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M92.94 90.3L88 84" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M88.58 103.7L81.08 106.46" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+        stroke-linejoin="round" />
+  <path d="M100 112L100.3 120" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M111.42 103.7L119.12 105.9" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+        stroke-linejoin="round" />
+  <path d="M107.06 90.3L111.5 83.64" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+        stroke-linejoin="round" />
+  <path d="M88.58 96.3L60.06 87.02" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+        stroke-linejoin="round" />
+  <path d="M92.94 109.7L75.32 133.98" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+        stroke-linejoin="round" />
+  <path d="M107.06 109.7L124.68 133.98" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+        stroke-linejoin="round" />
+  <path d="M111.42 96.3L139.94 87.02" stroke="#333435" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+        stroke-linejoin="round" />
+  <defs>
+    <filter id="filter0_d_9_2" x="16.5" y="16.5" width="166.98" height="159.88" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="4" />
+      <feGaussianBlur stdDeviation="2" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_2" result="shape" />
+    </filter>
+  </defs>
+</svg>

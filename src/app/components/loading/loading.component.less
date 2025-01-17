@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  text-align: center;
+}
+
+.flower {
+  position: absolute;
+  width: 80px; /* Adjust the size as needed */
+  animation: moveToCenter 2.5s ease forwards;
+}
+
+.flower.left {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  animation-delay: 0s; /* Start immediately */
+}
+
+.flower.center {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.3s; /* Slightly delayed for effect */
+}
+
+.flower.right {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  animation-delay: 0.6s; /* Further delay for staggered movement */
+}
+
+.text {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  z-index: 1;
+}
+
+/* Keyframes for the animation */
+@keyframes moveToCenter {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
